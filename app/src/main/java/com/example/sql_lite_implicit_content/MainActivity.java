@@ -140,7 +140,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
                 intent.putExtra(SearchManager.QUERY,look.getText().toString());
-                startActivity(intent);
+                Intent choose = Intent.createChooser(intent, "Select app...");
+                startActivity(choose);
             }
         });
     }
