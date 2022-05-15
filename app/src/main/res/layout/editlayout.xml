@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tvEdit_el"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Edit Record:"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/etFname_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etLname_edit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="First  Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etMinit_edit"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="M.I."
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etEmail_edit"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etContact_edit"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="numberPassword"
+        android:digits="0123456789+"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnUpRec_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Update Record" />
+
+    <Button
+        android:id="@+id/btnDelRec_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Record" />
+
+</LinearLayout>
